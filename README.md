@@ -3,7 +3,7 @@
 ## Objetivo do repositório
 
 Este repositório foi criado como o objetivo de versionar os códigos criados em sala de aula. <br>
-Os códigos de maneira organizada estarão no repositório ***Programming/Codes***
+Os códigos de maneira organizada estarão no repositório ***[Programming/ProgrammingLogic/Codes](https://github.com/heberhenrique/Programming/tree/main/ProgrammingLogic)***
 
 ## Instalação e Configuração
 
