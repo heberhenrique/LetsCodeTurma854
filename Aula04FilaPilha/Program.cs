@@ -81,9 +81,20 @@ while (!terminarPrograma)
     if (dicEmpresas.ContainsKey(setorStr))
     {
         var listaEmpresas = dicEmpresas[setorStr];
-        foreach (var empresa in listaEmpresas)
+
+        using (var file = File.Open($"/users/heberhenriquedasilva/desktop/{setorStr}.txt"
+            , FileMode.OpenOrCreate))
         {
-            Console.WriteLine(empresa);
+            foreach(var empresa in listaEmpresas)
+            {
+                var newEmpresa = $"{empresa}\n";
+                byte[] dados = new UTF8Encoding(true).GetBytes(newEmpresa);
+                file.Write(dados, 0, dados.Length);
+
+                Console.WriteLine(empresa);
+            }
+
+            file.Flush();
         }
     }
     else
