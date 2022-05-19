@@ -70,6 +70,17 @@ while (true)
         break;
 }
 
+int count = 0;
+
+while (count < 10)
+{
+    Console.WriteLine("Olá, Mundo - while!");
+    var input = Console.ReadKey();
+    if (input.Key == ConsoleKey.Enter)
+        break;
+    count++;
+}
+
 do
 {
     Console.WriteLine("Olá, Mundo - do while!");
