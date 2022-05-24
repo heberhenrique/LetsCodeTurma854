@@ -8,12 +8,21 @@ var numeroValido2 = "IV"; // 4
 var numeroValido3 = "VIII";
 var numeroInvalido = "LLVV";
 
-Console.WriteLine(RomanToInt(numeroValido3));
-Console.WriteLine(RomanToInt2(numeroInvalido));
+Console.WriteLine(RomanToInt(numeroValido));
+//Console.WriteLine(RomanToInt2(numeroInvalido));
 
 
 static int RomanToInt(string s)
 {
+    if (string.IsNullOrWhiteSpace(s))
+        throw new ArgumentException(null, nameof(s));
+
+    var pattern = @"\bM{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})\b";
+    Regex regex = new Regex(pattern);
+
+    if (!regex.Match(s).Success)
+        throw new ArgumentException("Número inválido", nameof(s));
+
     var numero = 0;
     var algarismos = new Dictionary<char, int>();
     algarismos.Add('I', 1);
@@ -23,15 +32,6 @@ static int RomanToInt(string s)
     algarismos.Add('C', 100);
     algarismos.Add('D', 500);
     algarismos.Add('M', 1000);
-
-    var pattern = @"\bM{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})\b";
-    Regex regex = new Regex(pattern);
-
-    if (string.IsNullOrWhiteSpace(s))
-        throw new ArgumentException(null, nameof(s));
-
-    if (!regex.Match(s).Success)
-        throw new ArgumentException("Número inválido", nameof(s));
 
     for (int i = 0; i < s.Length; i++)
     {
