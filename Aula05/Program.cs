@@ -42,7 +42,37 @@ Console.WriteLine($"Data de Nascimento: {novoCliente.DataNascimento}");
 Console.WriteLine($"Estado Civil: {novoCliente.EstadoCivil}");
 Console.WriteLine($"Cpf: {novoCliente.Cpf}");
 
+var num1 = "123";
+int ret;
+
+var sucesso = int.TryParse(num1, out ret);
+
+if (sucesso)
+{
+    Console.WriteLine(ret);
+}
+
+Tuple<string, DateTime> cliente4 = new Tuple<string, DateTime>("Henrique", new DateTime(1988, 8, 21));
+
 (string Nome, DateTime DataNascimento) cliente2 = ("Henrique", new DateTime(1988, 8, 21));
+
+(
+    string Nome,
+    DateTime DataNascimento,
+    string Cpf,
+    string Endereco,
+    char Sexo,
+    string Nacionalidade
+)
+cliente3 =
+(
+    "Joao",
+    new DateTime(1988, 8, 21),
+    "",
+    "",
+    'M',
+    "Brasileiro"
+);
 
 var listaTupla = new List<(string Nome, DateTime DataNascimento)>();
 listaTupla.Add(("Silva", new DateTime(1988, 8, 21)));
