@@ -55,6 +55,7 @@ if (sucesso)
 Tuple<string, DateTime> cliente4 = new Tuple<string, DateTime>("Henrique", new DateTime(1988, 8, 21));
 
 (string Nome, DateTime DataNascimento) cliente2 = ("Henrique", new DateTime(1988, 8, 21));
+var teste = ("Henrique", new DateTime(1988, 8, 21));
 
 (
     string Nome,

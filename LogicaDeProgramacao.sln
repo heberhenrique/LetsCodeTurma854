@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode13SolucaoWeb", "Lee
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula07", "Aula07\Aula07.csproj", "{9A4D70BA-E773-4E25-A809-E2C2EAB2771D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula08", "Aula08\Aula08.csproj", "{3F6F6AFC-07FD-4674-B2DF-EB7333B1C4A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{9A4D70BA-E773-4E25-A809-E2C2EAB2771D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A4D70BA-E773-4E25-A809-E2C2EAB2771D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A4D70BA-E773-4E25-A809-E2C2EAB2771D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F6F6AFC-07FD-4674-B2DF-EB7333B1C4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F6F6AFC-07FD-4674-B2DF-EB7333B1C4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F6F6AFC-07FD-4674-B2DF-EB7333B1C4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F6F6AFC-07FD-4674-B2DF-EB7333B1C4A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
