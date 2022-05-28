@@ -33,6 +33,7 @@ var terminarPrograma = false;
 
 for (int i = 1; i < arquivo.Length; i++)
 {
+    string[] array = { };
     var nome = arquivo[i].Split(';')[0];
     var setor = arquivo[i].Split(';')[1];
     var codigo = arquivo[i].Split(';')[2];
